@@ -2,20 +2,20 @@ package sk.eshopapp.eshop.model;
 
 public class CartItem {
 
-    private Product product;
+    private String productId;
     private int quantity;
 
-    public CartItem(final Product product, final int quantity) {
-        this.product = product;
+    public CartItem(final String productId, final int quantity) {
+        this.productId = productId;
         this.quantity = quantity;
     }
 
-    public Product getProduct() {
-        return product;
+    public String getProductId() {
+        return productId;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setProduct(String productId) {
+        this.productId = productId;
     }
 
     public int getQuantity() {
